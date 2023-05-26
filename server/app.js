@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-mongoose.connect('mongodb+srv://phibux:5KFQ119VNkMSNea2@cluster0.tf17i3g.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://<user>:<pass>/?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {
     console.log('connected to database');
 });
